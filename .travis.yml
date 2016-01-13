@@ -1,5 +1,9 @@
 sudo: true
 
+env:
+  global:
+    - BRANCH=stable
+
 install:
 - curl -sLo - http://j.mp/install-travis-docker | sh -xe
 
